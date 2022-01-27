@@ -6,7 +6,9 @@ public class Main {
         Cars brand = new Cars();
         brand.addBrand("Subaru ");
         Cars model = new Cars();
-        model.addModel("Impreza WRX STI");
+        model.addModel("Impreza ");
+        Cars modification = new Cars();
+        modification.addModification("WRX STI");
         System.out.println("The car of the century = " + Cars.carName);
     }
 
@@ -21,6 +23,11 @@ public class Main {
         public static void addModel(String modelName) {
             Cars.carName = Cars.carName + modelName;
             System.out.println("The model of a car = " + modelName);
+        }
+
+        public static void addModification(String modification) {
+            Cars.carName = Cars.carName + modification;
+            System.out.println("The modification of a car = " + modification);
         }
     }
 
